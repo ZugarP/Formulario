@@ -7,4 +7,4 @@ export default function FormularioController (){
             <button>enviar</button>
         </div>
     )
-}
+};
