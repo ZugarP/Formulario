@@ -1,11 +1,31 @@
-import React from 'react';
+import React from "react";
+import { ViewProps, ViewState } from "../types/types";
 
-export default function FormularioView (){
-    return(
-        <div>
-        <span>name</span>
-        <input type="text"/>
-        <button>enviar</button>
-    </div>
-    )
+
+export class UserView extends React.Component<ViewProps, ViewState>{
+    render(){
+        const {name, email, message, handleChange, handleSubmit, formSent}=this.props;
+        return(
+            <form onSubmit={handleSubmit}>
+  
+                <br/>
+                <label>name </label>
+                <input placeholder='Name' name='name' value={name} onChange={handleChange} type="text"/>
+
+                <br/><br/>
+                <label>email </label>
+                <input placeholder='Email' name='email' value={email} onChange={handleChange} type="email"/>
+                
+                <br/><br/>
+                <label>message </label>
+                <input placeholder='Message' name='message' value={message} onChange={handleChange} type="text"/>  
+               
+                <br/>
+                <br/>
+                <button>enviar</button>
+            </form>
+
+        
+        )
+    }
 }
