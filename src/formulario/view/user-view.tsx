@@ -31,6 +31,7 @@ export class UserView extends React.Component<ViewProps, ViewState>{
                             onChange={handleChange}
                         />
                          <button>Submit</button> 
+                        <span>{formSent?'Formulario enviado com sucesso!': ''}</span>
                 </form>     
                    
                 
@@ -39,3 +40,4 @@ export class UserView extends React.Component<ViewProps, ViewState>{
     }
 
 }
+//dads
