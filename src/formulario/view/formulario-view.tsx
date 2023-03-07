@@ -22,7 +22,10 @@ export class UserView extends React.Component<ViewProps, ViewState>{
                
                 <br/>
                 <br/>
-                <button>enviar</button>
+                <button type="submit">enviar</button>
+                <br/>
+                <span>{formSent?'Formulario enviado com sucesso!':'Fail'}</span>
+
             </form>
 
         
