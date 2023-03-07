@@ -2,13 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import FormularioView from './formulario/view/formulario-view';
+import { UserView } from './formulario/view/user-view';
+import UserController from './formulario/controller/user-controler';
+
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <FormularioView/>
+    <UserController/>
   </React.StrictMode>
 );
 
