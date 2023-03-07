@@ -30,8 +30,8 @@ export class UserView extends React.Component<ViewProps, ViewState>{
                             name='message'
                             onChange={handleChange}
                         />
-                         <button>Submit</button> 
-                        <span>{formSent?'Formulario enviado com sucesso!': ''}</span>
+                         <button type = 'submit'>Submit</button> 
+                        <span>{formSent?'Formulario enviado com sucesso!': 'Erro'}</span>
                 </form>     
                    
                 
