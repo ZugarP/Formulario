@@ -16,20 +16,20 @@ export class UserView extends React.Component<ViewProps, ViewState>{
                         name='name'
                         onChange={handleChange}
                          />
-               
+                        <br/>
                 
                         <label>Email:</label>
                         <input placeholder ='Email'
                             name='email'
                             onChange={handleChange}
                         />
-                   
-                
+                        <br/>
                         <label>Message:</label>
                         <input placeholder ='Message'
                             name='message'
                             onChange={handleChange}
                         />
+                        <br/>
                          <button type = 'submit'>Submit</button> 
                         <span>{formSent?'Formulario enviado com sucesso!': 'Erro'}</span>
                 </form>     
